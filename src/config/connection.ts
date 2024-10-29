@@ -1,5 +1,9 @@
 import mongoose from 'mongoose';
 
-mongoose.connect('mongodb://127.0.0.1:27017/videosAndResponses');
+const connectionString = 'mongodb://127.0.0.1:27017/socialNetworkDB';
 
-export default mongoose.connection;
+mongoose.connect(connectionString);
+
+const db = mongoose.connection;
+
+export default db;

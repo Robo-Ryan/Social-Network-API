@@ -1,14 +1,15 @@
 {
-  "name": "25-ins_mongoose-crud",
+  "name": "social-network-api",
   "version": "1.0.1",
-  "description": "Instructor demo for CRUD operations in Mongoose on subdocuments",
+  "description": "social network API using Mongoose and subdocuments",
   "main": "server.js",
   "type": "module",
   "scripts": {
     "build": "npx tsc",
     "start": "npm run build && node dist/server.js",
-    "seed": "npm run build && node  dist/utils/seed.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "seed": "npm run build && node dist/utils/seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev src/server.ts"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@types/express": "^4.17.21",
     "@types/mongoose": "^5.11.96",
+    "ts-node-dev": "^1.1.8",
     "typescript": "^5.5.4"
   }
 }
